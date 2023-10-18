@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class InitParkingLotImpl {
+public class InitParkingLotImpl implements InitParkingLot{
 
 
     private final ParkingSlotRepository parkingSlotRepository;
@@ -29,6 +29,7 @@ public class InitParkingLotImpl {
         this.gateRepository = gateRepository;
     }
 
+    @Override
     public void initParkingLot() {
         ParkingLot parkingLot = new ParkingLot();
         parkingLot.setId(1);

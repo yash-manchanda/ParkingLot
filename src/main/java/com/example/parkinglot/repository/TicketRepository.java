@@ -24,4 +24,11 @@ public class TicketRepository {
         ticketMap.put(ticket.getId(), ticket);
         return ticket;
     }
+
+    @Override
+    public String toString() {
+        return "TicketRepository{" +
+                "ticketMap=" + ticketMap +
+                '}';
+    }
 }

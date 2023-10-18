@@ -24,4 +24,11 @@ public class ParkingLotRepository {
         parkingLotMap.put(parkingLot.getId(), parkingLot);
         return parkingLot;
     }
+
+    @Override
+    public String toString() {
+        return "ParkingLotRepository{" +
+                "parkingLotMap=" + parkingLotMap +
+                '}';
+    }
 }

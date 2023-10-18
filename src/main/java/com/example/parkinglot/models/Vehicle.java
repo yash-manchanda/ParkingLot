@@ -8,6 +8,16 @@ public class Vehicle extends BaseModel{
     private String color;
     private VehicleType vehicleType;
 
+    private static int vehicleId = 1;
+
+    public Vehicle(String number, String name, String color, VehicleType vehicleType) {
+        super(vehicleId++);
+        this.number = number;
+        this.name = name;
+        this.color = color;
+        this.vehicleType = vehicleType;
+    }
+
     public String getNumber() {
         return number;
     }

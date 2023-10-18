@@ -24,4 +24,11 @@ public class GateRepository {
         gateMap.put(gate.getId(), gate);
         return gate;
     }
+
+    @Override
+    public String toString() {
+        return "GateRepository{" +
+                "gateMap=" + gateMap +
+                '}';
+    }
 }

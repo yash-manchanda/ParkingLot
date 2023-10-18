@@ -20,6 +20,11 @@ public class ParkingLotApplication {
 
         InitParkingLotImpl initService = new InitParkingLotImpl(parkingSlotRepository, parkingFloorRepository, parkingLotRepository, gateRepository);
         initService.initParkingLot();
+        System.out.println(parkingLotRepository);
+        System.out.println(parkingFloorRepository);
+        System.out.println(parkingFloorRepository);
+        System.out.println(gateRepository);
+        System.out.println("");
     }
 
 }

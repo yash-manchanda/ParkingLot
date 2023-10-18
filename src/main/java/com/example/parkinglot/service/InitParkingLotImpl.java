@@ -41,7 +41,7 @@ public class InitParkingLotImpl {
 
         List<ParkingFloor> parkingFloors = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            ParkingFloor parkingFloor = parkingFloors.get(i);
+            ParkingFloor parkingFloor = new ParkingFloor();
             parkingFloor.setFloorNumber(i);
             parkingFloor.setParkingFloorStatus(ParkingFloorStatus.OPEN);
             parkingFloor.setId(i);
